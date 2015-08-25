@@ -1,0 +1,22 @@
+{
+    "name": "deka6pb/simpletodo",
+    "description": "Simple ToDo",
+    "keywords": [
+        "yii2",
+        "yii2-todo",
+        "todo",
+        "yii2-simple-todo",
+        "deka6pb"
+    ],
+    "license": "MIT",
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "Mikhail Maklashov",
+            "email": "mikhail.maklashov@gmail.com"
+        }
+    ],
+    "require": {
+        "2amigos/yii2-date-picker-widget": "~1.0"
+    }
+}
