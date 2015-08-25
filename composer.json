@@ -1,6 +1,7 @@
 {
     "name": "deka6pb/yii2-simple-todo",
     "description": "Simple ToDo List",
+    "version": "0.0.1",
     "keywords": [
         "yii2",
         "yii2-todo",
