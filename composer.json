@@ -1,19 +1,21 @@
 {
-    "name": "deka6pb/simpletodo",
-    "description": "Simple ToDo",
+    "name": "deka6pb/yii2-simpleTodo",
+    "description": "Simple ToDo List",
     "keywords": [
         "yii2",
         "yii2-todo",
         "todo",
-        "yii2-simple-todo",
+        "yii2-simpleTodo",
         "deka6pb"
     ],
+    "homepahe": "https://github.com/deka6pb/yii2-simpleTodo",
+    "minimum-stability": "dev",
     "license": "MIT",
     "type": "yii2-extension",
     "authors": [
         {
             "name": "Mikhail Maklashov",
-            "email": "mikhail.maklashov@gmail.com"
+            "email": "deka6pb@gmail.com"
         }
     ],
     "require": {
