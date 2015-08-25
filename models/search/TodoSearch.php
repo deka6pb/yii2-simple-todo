@@ -34,9 +34,13 @@ class TodoSearch extends Todo
     }
 
     public function getDefaultParams() {
-        $params['TodoSearch'] = [
-            'project_id' => array_keys(Project::getProjectsList())[0]
-        ];
+        $params = [];
+
+        // add first project
+        if(array_keys(Project::getProjectsList())) {
+            $params['TodoSearch']['project_id'] = array_keys(Project::getProjectsList())[0];
+        }
+
         return $params;
     }
 
