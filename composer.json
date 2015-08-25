@@ -9,7 +9,6 @@
         "deka6pb"
     ],
     "homepahe": "https://github.com/deka6pb/yii2-simple-todo",
-    "minimum-stability": "dev",
     "license": "MIT",
     "type": "yii2-extension",
     "authors": [
