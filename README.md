@@ -1,5 +1,5 @@
-# yii2-autoparser
-parser in social networks
+# yii2-simpleTodo
+Todo List for Yii2
 
 ## Documentation
 
