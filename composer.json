@@ -1,14 +1,14 @@
 {
-    "name": "deka6pb/yii2-simpleTodo",
+    "name": "deka6pb/yii2-simple-todo",
     "description": "Simple ToDo List",
     "keywords": [
         "yii2",
         "yii2-todo",
         "todo",
-        "yii2-simpleTodo",
+        "yii2-simple-todo",
         "deka6pb"
     ],
-    "homepahe": "https://github.com/deka6pb/yii2-simpleTodo",
+    "homepahe": "https://github.com/deka6pb/yii2-simple-todo",
     "minimum-stability": "dev",
     "license": "MIT",
     "type": "yii2-extension",

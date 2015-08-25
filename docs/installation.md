@@ -7,7 +7,7 @@ and easy three-step process.
 Step 1: Download Yii2-simpleTodo using composer
 -----------------------------------------
 
-Add `"deka6pb/yii2-simpleTodo": "*"` to the require section of your **composer.json** file and run
+Add `"deka6pb/yii2-simple-todo": "*"` to the require section of your **composer.json** file and run
 `composer update` to download and install Yii2-autoparser.
 
 Step 2: Configure your application
@@ -35,7 +35,7 @@ applying
 the migrations:
 
 ```bash
-$ php yii migrate/up --migrationPath=@vendor/deka6pb/yii2-simpleTodo/migrations
+$ php yii migrate/up --migrationPath=@vendor/deka6pb/yii2-simple-todo/migrations
 ```
 
 
