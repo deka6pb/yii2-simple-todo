@@ -5,7 +5,6 @@ namespace deka6pb\simpleTodo\controllers;
 use Yii;
 use deka6pb\simpleTodo\models\Project;
 use deka6pb\simpleTodo\models\search\ProjectSearch;
-use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

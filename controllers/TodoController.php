@@ -20,12 +20,12 @@ class TodoController extends Controller
     public function behaviors()
     {
         return [
-            /*'verbs' => [
+            'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
                 ],
-            ],*/
+            ],
         ];
     }
 
