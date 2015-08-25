@@ -23,5 +23,10 @@
     },
     "require-dev": {
 
+    },
+    "autoload": {
+        "psr-4": {
+            "deka6pb\\simpleTodo\\": ""
+        }
     }
 }
