@@ -1,5 +1,5 @@
 # yii2-simpleTodo
-Todo List for Yii2
+Todo List module for Yii2
 
 ## Documentation
 
