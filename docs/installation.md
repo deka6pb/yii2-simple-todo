@@ -8,7 +8,7 @@ Step 1: Download Yii2-simpleTodo using composer
 -----------------------------------------
 
 Add `"deka6pb/yii2-simple-todo": "*"` to the require section of your **composer.json** file and run
-`composer update` to download and install Yii2-autoparser.
+`composer update` to download and install Yii2-simple-todo.
 
 Step 2: Configure your application
 ------------------------------------

@@ -57,7 +57,7 @@ ModuleAsset::register($this);
         <?= Breadcrumbs::widget([
             'homeLink' => [
                 'label' => Yii::t('yii', 'Home'),
-                'url'   => '/autoparser/posts/#',
+                'url'   => '/todo/todo/#',
             ],
             'links'    => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
