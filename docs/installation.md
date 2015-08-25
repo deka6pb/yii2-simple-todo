@@ -37,5 +37,3 @@ the migrations:
 ```bash
 $ php yii migrate/up --migrationPath=@vendor/deka6pb/yii2-simple-todo/migrations
 ```
-
-
