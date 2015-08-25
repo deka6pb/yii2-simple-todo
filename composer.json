@@ -18,9 +18,9 @@
         }
     ],
     "require": {
-
+        "2amigos/yii2-date-picker-widget": "~1.0"
     },
     "require-dev": {
-        "2amigos/yii2-date-picker-widget": "~1.0"
+
     }
 }
