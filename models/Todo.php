@@ -6,6 +6,7 @@ use common\models\User;
 use DateInterval;
 use DateTime;
 use deka6pb\simpleTodo\behaviors\DateTimeBehavior;
+use deka6pb\simpleTodo\behaviors\DateTimeCheckerBehavior;
 use deka6pb\simpleTodo\behaviors\DurationParserBehavior;
 use deka6pb\simpleTodo\behaviors\UserBehavior;
 use Yii;
@@ -89,18 +90,22 @@ class Todo extends \yii\db\ActiveRecord
     public function behaviors() {
         return [
             'UserBehavior' => [
-                'class'            => UserBehavior::className(),
-                'user_attribute'   => 'author_id'
+                'class'                 => UserBehavior::className(),
+                'user_attribute'        => 'author_id'
             ],
-            'DateTimeStampBehavior' => [
-                'class'      => DateTimeBehavior::className(),
-                'attributes' => [
+            'DateTimeCheckerBehavior' => [
+                'class'                 => DateTimeCheckerBehavior::className(),
+                'attribute_name'        => 'date_start',
+            ],
+            'DateTimeBehavior' => [
+                'class'                 => DateTimeBehavior::className(),
+                'attributes'            => [
                     BaseActiveRecord::EVENT_BEFORE_INSERT => 'created',
                 ]
             ],
             'DurationParserBehavior' => [
-                'class'             => DurationParserBehavior::className(),
-                'attribute_name'    => 'duration_minute',
+            'class'                     => DurationParserBehavior::className(),
+                'attribute_name'        => 'duration_minute',
             ],
         ];
     }
