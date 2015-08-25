@@ -27,23 +27,22 @@ ModuleAsset::register($this);
 <div class="wrap">
     <?php
     NavBar::begin([
-        'brandLabel' => 'yii2-autoparser',
-        'brandUrl'   => '/autoparser/posts/',
+        'brandLabel' => 'yii2-simple-todo',
+        'brandUrl'   => '/todo/todo/index',
         'options'    => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
-        ['label' => 'Home', 'url' => ['/todo/#']],
         ['label' => 'Project', 'url' => ['project/index']],
         ['label' => 'Todo', 'url' => ['todo/index']],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Login', 'url' => ['/todo/default/login']];
+        $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
         $menuItems[] = [
             'label'       => 'Logout (' . Yii::$app->user->identity->username . ')',
-            'url'         => ['/todo/default/logout'],
+            'url'         => ['/site/logout'],
             'linkOptions' => ['data-method' => 'post']
         ];
     }

@@ -5,6 +5,7 @@ namespace deka6pb\simpleTodo\controllers;
 use Yii;
 use deka6pb\simpleTodo\models\Todo;
 use deka6pb\simpleTodo\models\search\TodoSearch;
+use yii\filters\AccessControl;
 use yii\helpers\Json;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -20,6 +21,16 @@ class TodoController extends Controller
     public function behaviors()
     {
         return [
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'actions' => ['index', 'view', 'create', 'update', 'delete', 'check', 'todoGrid'],
+                        'roles' => ['@'],
+                    ],
+                ],
+            ],
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
