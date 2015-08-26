@@ -47,6 +47,7 @@ class TodoController extends Controller
     public function actionIndex()
     {
         $searchModel = new TodoSearch();
+        $searchModel->user_id = Yii::$app->user->id;
         $params = (!empty(Yii::$app->request->queryParams)) ? Yii::$app->request->queryParams : $searchModel->getDefaultParams();
         $dataProvider = $searchModel->search($params);
 
